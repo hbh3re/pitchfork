@@ -73,15 +73,3 @@ class PitchforkSpider(Spider):
             l.add_value('bnr', '0')
 
         yield l.load_item()
-
-
-        # data['date'] = response.css('time.pub-date::text').extract_first()
-        # data['album'] = response.css('h1.single-album-tombstone__review-title::text').extract_first()
-        # data['artist'] = response.xpath('//hgroup[@class="single-album-tombstone__headings"]//a/text()').extract() # 1 or more
-        # data['reviewer'] = response.css('a.authors-detail__display-name::text').extract_first()
-        # # data['text'] = ' '.join(response.xpath('//div[@class="contents dropcap"]//p/text()').extract())
-        # data['url'] = response.url
-        # bnm = response.css('p.bnm-txt::text').extract_first()
-        # data['bnm'] = 1 if bnm == 'Best new music' else 0 # get best new music
-        # data['bnr'] = 1 if bnm == 'Best new reissue' else 0
-
